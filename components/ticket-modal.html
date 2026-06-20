@@ -1,0 +1,31 @@
+<!-- components/ticket-modal.html -->
+<div class="modal">
+  <h2 id="modalTitle">Create Ticket</h2>
+  <form id="ticketForm">
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title" required />
+
+    <label for="description">Description</label>
+    <textarea id="description" name="description" rows="4" required></textarea>
+    <button type="button" class="btn secondary" id="suggestBtn">🤖 Suggest Description</button>
+
+    <label for="category">Category</label>
+    <input type="text" id="category" name="category" />
+
+    <label for="priority">Priority</label>
+    <select id="priority" name="priority">
+      <option>Low</option>
+      <option selected>Medium</option>
+      <option>High</option>
+      <option>Critical</option>
+    </select>
+
+    <label for="attachment">Attachment</label>
+    <input type="file" id="attachment" name="attachment" />
+
+    <div class="flex" style="justify-content:flex-end;gap:0.5rem;margin-top:1rem;">
+      <button type="button" class="btn secondary" id="cancelTicketBtn">Cancel</button>
+      <button type="submit" class="btn primary" id="saveTicketBtn">Save</button>
+    </div>
+  </form>
+</div>

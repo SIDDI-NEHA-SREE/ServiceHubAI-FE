@@ -1,0 +1,101 @@
+<div class="dash-header">
+  <div class="dash-title">
+    <h1>Admin Dashboard</h1>
+    <p>Full system overview and management controls</p>
+  </div>
+  <div class="dash-actions">
+    <button class="btn-outline">
+      <i class="ph ph-gear"></i> User Management
+    </button>
+    <button class="btn-fill">
+      <i class="ph ph-shield-check"></i> Audit Log
+    </button>
+  </div>
+</div>
+
+<div class="stats-grid">
+  <!-- Stat Card 1 -->
+  <div class="stat-card bg-blue">
+    <div class="stat-header">
+      <div class="stat-icon"><i class="ph ph-ticket"></i></div>
+      <span class="stat-badge">All Time</span>
+    </div>
+    <div class="stat-label">Total Tickets</div>
+    <div class="stat-value" id="totalTicketsVal">20</div>
+  </div>
+
+  <!-- Stat Card 2 -->
+  <div class="stat-card bg-green">
+    <div class="stat-header">
+      <div class="stat-icon"><i class="ph ph-check-circle"></i></div>
+      <span class="stat-badge">Closed & Resolved</span>
+    </div>
+    <div class="stat-label">Resolved Tickets</div>
+    <div class="stat-value" id="resolvedTicketsVal">6</div>
+  </div>
+
+  <!-- Stat Card 3 -->
+  <div class="stat-card bg-purple">
+    <div class="stat-header">
+      <div class="stat-icon"><i class="ph ph-users"></i></div>
+      <span class="stat-badge">Active Users</span>
+    </div>
+    <div class="stat-label">Total Employees</div>
+    <div class="stat-value" id="totalEmployeesVal">15</div>
+  </div>
+
+  <!-- Stat Card 4 -->
+  <div class="stat-card bg-orange">
+    <div class="stat-header">
+      <div class="stat-icon"><i class="ph ph-clock"></i></div>
+      <span class="stat-badge">Target: 95%</span>
+    </div>
+    <div class="stat-label">SLA Compliance</div>
+    <div class="stat-value" id="slaComplianceVal">87%</div>
+  </div>
+</div>
+
+<div class="dash-bottom">
+  <!-- Recent Activity Panel -->
+  <div class="panel-card">
+    <div class="panel-header">
+      <h3 class="panel-title">Recent System Activity</h3>
+      <a href="#/activity" class="panel-link">View All <i class="ph ph-arrow-right"></i></a>
+    </div>
+    <div class="activity-list">
+      
+      <div class="activity-item">
+        <div class="activity-avatar pink">A</div>
+        <div class="activity-content">
+          <div class="activity-meta">
+            <div class="activity-text">User Login <span>by Admin User</span></div>
+            <div class="activity-time">02:30 PM</div>
+          </div>
+          <div class="activity-subtext">Admin session initiated</div>
+        </div>
+      </div>
+
+      <div class="activity-item">
+        <div class="activity-avatar blue">S</div>
+        <div class="activity-content">
+          <div class="activity-meta">
+            <div class="activity-text">Status Update <span>by Sarah Mitchell</span></div>
+            <div class="activity-time">03:45 PM</div>
+          </div>
+          <div class="activity-subtext">TKT-2026-00001 moved to Resolved</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- User Management Panel -->
+  <div class="panel-card">
+    <div class="side-panel-icon">
+      <i class="ph ph-users-three"></i>
+    </div>
+    <h3 class="side-panel-title">User Management</h3>
+    <p class="side-panel-desc">Manage all users, roles, and permissions in one place.</p>
+    <button class="btn-primary" onclick="location.hash='#/admin'">Manage Users</button>
+  </div>
+</div>
